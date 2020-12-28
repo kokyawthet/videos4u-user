@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "181286266228",
+    "firebase_url": "https://videoforu-c0ff4-default-rtdb.firebaseio.com",
+    "project_id": "videoforu-c0ff4",
+    "storage_bucket": "videoforu-c0ff4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181286266228:android:6ce0aa32724042361a3821",
+        "android_client_info": {
+          "package_name": "com.videosforu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181286266228-j2ls91kq402c38c5etjf9bt547ila8c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI4hx6tX7Oz1kIbKmokpnaS40DEyzJxIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181286266228-j2ls91kq402c38c5etjf9bt547ila8c6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
