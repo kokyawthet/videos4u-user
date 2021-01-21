@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, Text, View, FlatList,Image } from 'react-native'
 import { globalStyles, string } from '../components/globalStyle';
 import ImageHandler from '../components/Image';
 import Empty from '../components/Empty';
@@ -38,6 +38,18 @@ export default function Videos({ route }) {
         });
     }
 
+    if (loading == true)
+    {
+        return (
+            <View style={styles.container}>
+                <Image
+                    source={require('../image/app.gif')}
+                    style={styles.image}
+                />
+            </View>
+        )
+    }
+
     return (
         <View style={globalStyles.container}>
             <View style={styles.Navheader}>
@@ -56,8 +68,9 @@ export default function Videos({ route }) {
                 showsVerticalScrollIndicator={false}
                 ListEmptyComponent={Empty}
                 style={{ marginBottom: 3 }}
-                numColumns={1}
+                numColumns={3}
                 refreshing={loading}
+                style={{alignSelf:"center"}}
                 onRefresh={() => getCategoryPost()}
             />
             <BannerAd unitId={string.bannerAds} size={BannerAdSize.SMART_BANNER} />
@@ -68,8 +81,9 @@ export default function Videos({ route }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+        backgroundColor: '#444',
+        alignContent: 'center',
+        justifyContent: 'center'
     },
     Navheader: {
         backgroundColor: '#FF5722',
@@ -77,5 +91,10 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         paddingVertical: 10,
         flexDirection: 'row',
+    },
+    image: {
+        alignSelf: 'center',
+        width: "80%",
+        height: "30%",
     },
 })

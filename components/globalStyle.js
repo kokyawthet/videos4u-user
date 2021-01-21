@@ -3,8 +3,8 @@ import { BannerAd, TestIds, BannerAdSize, RewardedAd } from '@react-native-fireb
 const adUnitId = TestIds.BANNER
 const adInter = TestIds.INTERSTITIAL;
 export const string = {
-    'bannerAds': "ca-app-pub-7962095645683737/6975808019",
-    'interAds': "ca-app-pub-7962095645683737/4349644676",
+    'bannerAds': adUnitId,
+    'interAds': adInter,
 }
 // Video Fou you app id => ca-app-pub-7962095645683737~3561169006
 

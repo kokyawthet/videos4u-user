@@ -61,10 +61,7 @@ export default class Player extends React.Component{
                         loop={this.state.isLooping}
                         fullscreen={this.state.fullscreen}
                         controls={1}
-                        style={[
-                            { height: PixelRatio.roundToNearestPixel(this.state.playerWidth / (16 / 9)),marginTop:Dimensions.get("screen").height/3 },
-                            styles.player,
-                        ]}
+                        style={{height:'100%'}}
                         onError={e => {
                             this.setState({ error: e.error });
                         }}
